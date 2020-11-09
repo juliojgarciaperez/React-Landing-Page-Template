@@ -9,8 +9,7 @@ export class Header extends Component {
             <div className="container">
               <div className="row">
                 <div className="col-md-8 col-md-offset-2 intro-text">
-                  <h1>
-                    
+                  <h1 style={{ fontSize: 50}}>
                     <span>W</span>elva<span>N</span>autic
                   </h1>
                   <p>
