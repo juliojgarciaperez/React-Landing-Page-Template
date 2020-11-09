@@ -1,7 +1,18 @@
 import React, { Component } from "react";
 
 export class Contact extends Component {
+  state = {
+    name: '',
+    email: '',
+    msg: ''
+  }
+
+  handleChange = e => {
+    this.setState({ [e.target.name]: e.target.value })
+  }
+
   render() {
+    const mailTo = window.encodeURI(`mailto:info@welvanauic.com?subject=Contacto ${this.state.name}&body=${this.state.msg}`)
     return (
       <div>
         <div id="contact">
@@ -9,11 +20,7 @@ export class Contact extends Component {
             <div className="col-md-8">
               <div className="row">
                 <div className="section-title">
-                  <h2>Get In Touch</h2>
-                  <p>
-                    Please fill out the form below to send us an email and we
-                    will get back to you as soon as possible.
-                  </p>
+                  <h2>Contacta con nosotros</h2>
                 </div>
                 <form name="sentMessage" id="contactForm" noValidate>
                   <div className="row">
@@ -22,9 +29,12 @@ export class Contact extends Component {
                         <input
                           type="text"
                           id="name"
+                          value={this.state.name}
+                          onChange={this.handleChange}
                           className="form-control"
-                          placeholder="Name"
+                          placeholder="Nombre"
                           required="required"
+                          name="name"
                         />
                         <p className="help-block text-danger"></p>
                       </div>
@@ -34,6 +44,9 @@ export class Contact extends Component {
                         <input
                           type="email"
                           id="email"
+                          name="email"
+                          value={this.state.email}
+                          onChange={this.handleChange}
                           className="form-control"
                           placeholder="Email"
                           required="required"
@@ -45,29 +58,30 @@ export class Contact extends Component {
                   <div className="form-group">
                     <textarea
                       name="message"
+                      value={this.state.msg}
+                      onChange={this.handleChange}
+                      name="msg"
                       id="message"
                       className="form-control"
-                      rows="4"
-                      placeholder="Message"
+                      rows="10"
+                      placeholder="Mensaje"
                       required
                     ></textarea>
                     <p className="help-block text-danger"></p>
                   </div>
                   <div id="success"></div>
-                  <button type="submit" className="btn btn-custom btn-lg">
-                    Send Message
-                  </button>
+                  <a href={mailTo} className="btn btn-custom btn-lg">Enviar</a>
                 </form>
               </div>
             </div>
             <div className="col-md-3 col-md-offset-1 contact-info">
               <div className="contact-item">
-                <h3>Contact Info</h3>
+                <h3>Información de Contacto</h3>
                 <p>
                   <span>
-                    <i className="fa fa-map-marker"></i> Address
+                    <i className="fa fa-map-marker"></i> Dirección
                   </span>
-                  {this.props.data ? this.props.data.address : "loading"}
+                  Paseo Independencia 34.<br/>entreplanta 2.<br/>21002.<br/>Huelva
                 </p>
               </div>
               <div className="contact-item">
@@ -75,7 +89,7 @@ export class Contact extends Component {
                   <span>
                     <i className="fa fa-phone"></i> Phone
                   </span>{" "}
-                  {this.props.data ? this.props.data.phone : "loading"}
+                  +34 689 436 327
                 </p>
               </div>
               <div className="contact-item">
@@ -83,45 +97,10 @@ export class Contact extends Component {
                   <span>
                     <i className="fa fa-envelope-o"></i> Email
                   </span>{" "}
-                  {this.props.data ? this.props.data.email : "loading"}
+                  info@welvanautic.com
                 </p>
               </div>
             </div>
-            <div className="col-md-12">
-              <div className="row">
-                <div className="social">
-                  <ul>
-                    <li>
-                      <a
-                        href={this.props.data ? this.props.data.facebook : "/"}
-                      >
-                        <i className="fa fa-facebook"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href={this.props.data ? this.props.data.twitter : "/"}>
-                        <i className="fa fa-twitter"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href={this.props.data ? this.props.data.youtube : "/"}>
-                        <i className="fa fa-youtube"></i>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="footer">
-          <div className="container text-center">
-            <p>
-              &copy; 2020 Issaaf Kattan React Land Page Template. Design by{" "}
-              <a href="http://www.templatewire.com" rel="nofollow">
-                TemplateWire
-              </a>
-            </p>
           </div>
         </div>
       </div>

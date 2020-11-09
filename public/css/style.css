@@ -78,8 +78,10 @@ hr {
 	font-family: 'Raleway', sans-serif;
 	font-size: 24px;
 	font-weight: 700;
-	color: #333;
-	text-transform: uppercase;
+	color: #11114a;
+}
+#menu a.navbar-brand span {
+	color:#a41933;
 }
 #menu.navbar-default .navbar-nav > li > a {
 	font-family: 'Lato', sans-serif;
@@ -198,16 +200,15 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 }
 .intro h1 {
 	font-family: 'Raleway', sans-serif;
-	color: #fff;
+	color: #11114a;
 	font-size: 82px;
 	font-weight: 700;
-	text-transform: uppercase;
 	margin-top: 0;
 	margin-bottom: 10px;
 }
 .intro h1 span {
 	font-weight: 800;
-	color: #5ca9fb;
+	color:#a41933;
 }
 .intro p {
 	color: #fff;

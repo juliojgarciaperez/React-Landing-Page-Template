@@ -10,17 +10,17 @@ export class Header extends Component {
               <div className="row">
                 <div className="col-md-8 col-md-offset-2 intro-text">
                   <h1>
-                    {this.props.data ? this.props.data.title : "Loading"}
-                    <span></span>
+                    
+                    <span>W</span>elva<span>N</span>autic
                   </h1>
                   <p>
-                    {this.props.data ? this.props.data.paragraph : "Loading"}
+                    {this.props.data ? this.props.data.paragraph : "Cargando"}
                   </p>
                   <a
                     href="#features"
                     className="btn btn-custom btn-lg page-scroll"
                   >
-                    Learn More
+                    Sobre nosotros
                   </a>{" "}
                 </div>
               </div>

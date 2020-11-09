@@ -1,8 +1,8 @@
 {
     "Header": {
 
-        "title": "We are a Landing Page",
-        "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sed commodo nibh ante facilisis bibendum."
+        "title": "WelvaNautic",
+        "paragraph": "Instalaciones electrónicas en embarcaciones."
 
     },
     "About": {
@@ -113,23 +113,23 @@
         "youtube": "youtube.com"
     },
     "Features": [{
-            "icon": "fa fa-comments-o",
-            "title": "Lorem ipsum",
+            "icon": "fa fa-anchor",
+            "title": "Chartplotters",
             "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
         },
         {
-            "icon": "fa fa-bullhorn",
-            "title": "Lorem ipsum",
+            "icon": "fa fa-globe",
+            "title": "Sondas y Transductores",
             "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
         },
         {
-            "icon": "fa fa-group",
-            "title": "Lorem ipsum",
+            "icon": "fa fa-map-marker",
+            "title": "Radares, radios VHF y AIS",
             "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
         },
         {
-            "icon": "fa fa-magic",
-            "title": "Lorem ipsum",
+            "icon": "fa fa-ship",   
+            "title": "Pilotos automáticos",
             "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
         }
     ]
