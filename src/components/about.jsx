@@ -11,7 +11,7 @@ export class about extends Component {
               <div className="about-text">
                 <h2>Sobre nosotros</h2>
                 <p>Somos un equipo con más de veinte años de experiencia en la instalación y mantenimiento de equipos electrónicos en embarcaciones.</p>
-                <p>Somos especialistas en equipos <b>SIMRAD</b>, aunque trabajamos también contras marcas de primera línea</p>
+                <p>Somos especialistas en equipos <b>SIMRAD</b>, aunque trabajamos también contras marcas de primera línea.</p>
                 <h3>¿Por qué elegir WelvaNautic?</h3>
                 <div className="list-style">
                   <div className="col-lg-6 col-sm-6 col-xs-12">
