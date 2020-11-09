@@ -75,6 +75,8 @@ hr {
 	box-shadow: 0 0 10px rgba(0,0,0,0.15)
 }
 #menu a.navbar-brand {
+	display: flex;
+	align-items: middle;
 	font-family: 'Raleway', sans-serif;
 	font-size: 24px;
 	font-weight: 700;
@@ -578,4 +580,13 @@ color: #777;
 #about img {
 	margin: 50px 0;
 }
+}
+
+.logos {
+}
+.logos img {
+	width: 200px;
+	box-shadow: 3px 3px 3px #ddd;
+	border-radius: 4px;
+	margin-bottom: 20px;
 }
